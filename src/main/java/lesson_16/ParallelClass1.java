@@ -28,3 +28,4 @@ public class ParallelClass1 {
     public void parallel5() {
         System.out.println("Test parallel5 from ParallelClass1 - Thread ID: " + Thread.currentThread().getId());
     }
+}
