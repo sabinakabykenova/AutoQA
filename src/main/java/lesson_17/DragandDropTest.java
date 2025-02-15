@@ -51,7 +51,7 @@ public class DragAndDropTest {
 
         WebElement successMessage = driver.findElement(By.id("success-message"));
         assertTrue(successMessage.isDisplayed());
-        assertEquals("Congratulations! Let's test for the best!", successMessage.getText());
+        assertEquals("Congratulations!", successMessage.getText());
     }
 
     @AfterEach
