@@ -10,7 +10,7 @@ public class CalculatorTest {
     @Test
     public void testAddition() {
         WebDriver driver = new ChromeDriver();
-        driver.get("URL_КАЛЬКУЛЯТОРА");
+        //driver.get("URL");
 
         CalculatorPage calculator = new CalculatorPage(driver);
 

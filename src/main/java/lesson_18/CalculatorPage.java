@@ -8,7 +8,6 @@ import org.openqa.selenium.support.PageFactory;
 public class CalculatorPage {
     private WebDriver driver;
 
-    // Локаторы кнопок
     @FindBy(id = "button_1")
     private WebElement button1;
 
@@ -27,18 +26,15 @@ public class CalculatorPage {
     @FindBy(id = "result_textview")
     private WebElement resultText;
 
-    // Конструктор с инициализацией PageFactory
     public CalculatorPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
-    // Метод для клика по любой кнопке
     public void clickButton(WebElement button) {
         button.click();
     }
 
-    // Получение результата
     public String getResult() {
         return resultText.getText();
     }
