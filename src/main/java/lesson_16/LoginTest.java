@@ -1,6 +1,5 @@
 package lesson_16;
 
-
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -29,4 +28,3 @@ public class LoginTest {
         // assert loginUser(user.getUsername(), user.getPassword());
     }
 }
-
